@@ -4,6 +4,6 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-PRODUCT_MAKEFILES := $(LOCAL_DIR)/twrp_topaz.mk
+PRODUCT_MAKEFILES := $(LOCAL_DIR)/omni_topaz.mk
 
-COMMON_LUNCH_CHOICES := twrp_topaz-eng
+COMMON_LUNCH_CHOICES := omni_topaz-eng

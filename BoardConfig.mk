@@ -98,6 +98,7 @@ BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 TARGET_COPY_OUT_VENDOR := vendor
 
 # Recovery
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/system/etc/recovery.fstab
 BOARD_HAS_LARGE_FILESYSTEM := true
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 
@@ -126,6 +127,9 @@ TWRP_INCLUDE_LOGCAT := true
 # Fastbootd
 TW_INCLUDE_FASTBOOTD := true
 
+# PBRP specific build flags
+PB_DISABLE_DEFAULT_DM_VERITY := true
+
 # Other TWRP Configurations
 TW_THEME := portrait_hdpi
 TW_FRAMERATE := 60
@@ -146,12 +150,12 @@ TW_DEFAULT_LANGUAGE := en
 TW_DEFAULT_BRIGHTNESS := 200
 TW_EXCLUDE_APEX := true
 TW_HAS_EDL_MODE := true
+
 # Haptic
 TW_SUPPORT_INPUT_AIDL_HAPTICS := true
 TW_SUPPORT_INPUT_AIDL_HAPTICS_FQNAME := "IVibrator/vibratorfeature"
 TW_SUPPORT_INPUT_AIDL_HAPTICS_FIX_OFF := true
 TW_USE_SERIALNO_PROPERTY_FOR_DEVICE_ID := true
-#TW_NO_SCREEN_BLANK := true
 TW_LOAD_VENDOR_MODULES := "adsp_loader_dlkm.ko focaltech_ts_i2c.ko qti_battery_charger.ko"
 TW_CUSTOM_CPU_TEMP_PATH := "/sys/class/thermal/thermal_zone35/temp"
 TW_BATTERY_SYSFS_WAIT_SECONDS := 6

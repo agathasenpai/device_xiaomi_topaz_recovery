@@ -14,7 +14,7 @@ PRODUCT_RELEASE_NAME := topaz
 
 ## Device identifier
 PRODUCT_DEVICE := topaz
-PRODUCT_NAME := twrp_topaz
+PRODUCT_NAME := omni_topaz
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := 23021RAA2Y
 PRODUCT_MANUFACTURER := Xiaomi
